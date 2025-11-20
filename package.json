@@ -10,9 +10,11 @@
   "keywords": [],
   "author": "Muhammad Bilal <mbilal254.m@gmail.com>",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
+
   "devDependencies": {
     "@eslint/js": "^9.39.1",
+    "@types/express": "^5.0.5",
     "@types/node": "^24.10.1",
     "eslint": "^9.39.1",
     "globals": "^16.5.0",
@@ -20,5 +22,9 @@
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.47.0"
+  },
+
+  "dependencies": {
+    "express": "^5.1.0"
   }
 }

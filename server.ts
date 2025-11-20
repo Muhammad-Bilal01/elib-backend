@@ -1,5 +1,11 @@
-console.log("Welcome to EBook APis");
+import app from "./src/app.ts";
 
-function hello() {
-    console.log("first");
-}
+const startServer = () => {
+  const port = process.env.PORT || 3000;
+
+  app.listen(port, () => {
+    console.log(`listening on port: ${port}`);
+  });
+};
+
+startServer();
