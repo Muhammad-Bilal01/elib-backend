@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "This is an Ebook Library Management System",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Muhammad Bilal <mbilal254.m@gmail.com>",
+  "license": "ISC",
+  "type": "commonjs",
+
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
