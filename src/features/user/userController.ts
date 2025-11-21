@@ -5,7 +5,6 @@ import bcrypt from "bcryptjs";
 import jwt from "jsonwebtoken";
 import { config } from "../../config/config.ts";
 import type { UserType } from "./userTypes.ts";
-import { json } from "stream/consumers";
 
 export const registerUser = async (
   req: Request,
