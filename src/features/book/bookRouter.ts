@@ -3,6 +3,7 @@ import { creatteBook } from "./bookController.ts";
 import multer from "multer";
 import path, { dirname } from "node:path";
 import { fileURLToPath } from "url";
+import authenticate from "../../middlewares/authentication.ts";
 
 // Multer Middleware
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -15,6 +16,7 @@ const bookRoutes = express.Router();
 
 bookRoutes.post(
   "/",
+  authenticate,
   upload.fields([
     { name: "coverImage", maxCount: 1 },
     { name: "file", maxCount: 1 },
