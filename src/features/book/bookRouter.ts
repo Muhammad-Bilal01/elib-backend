@@ -1,11 +1,13 @@
 import express from "express";
 import { creatteBook } from "./bookController.ts";
 import multer from "multer";
-import path from "node:path";
+import path, { dirname } from "node:path";
+import { fileURLToPath } from "url";
 
 // Multer Middleware
+const __dirname = dirname(fileURLToPath(import.meta.url));
 const upload = multer({
-  dest: path.resolve(__dirname, "../../public/data/uploads"),
+  dest: path.resolve(__dirname, "../../../public/data/uploads"),
   limits: { fileSize: 3e7 }, // 3e7 = 30mb
 });
 

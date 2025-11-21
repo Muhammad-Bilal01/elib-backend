@@ -6,6 +6,9 @@ const _config = {
   databaseUrl: process.env.MONGODB_CONNECTION_STRING,
   env: process.env.NODE_ENV,
   jwt_secret: process.env.JWT_SECRET,
+  clodinaryCloudName: process.env.CLOUDINARY_CLOUD_NAME,
+  clodinaryApiKey: process.env.CLOUDINARY_API_KEY,
+  clodinaryApiSecret: process.env.CLOUDINARY_API_SECRET,
 };
 
 export const config = Object.freeze(_config);
